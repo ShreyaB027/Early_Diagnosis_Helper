@@ -31,7 +31,7 @@ export interface PredictionResponse {
 
 export async function handlePredict(req, res) {
   try {
-    const fastApiResponse = await fetch("http://127.0.0.1:8001/predict", {
+    const fastApiResponse = await fetch("https://ml-api-co9r.onrender.com/predict", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
